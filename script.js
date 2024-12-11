@@ -1,6 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+});
+
 function calculateFees() {
     const desiredAmount = parseFloat(document.getElementById("desiredAmount").value);
-    const exchangeRate = 81.7056; // Fixed backend exchange rate
+    const exchangeRate = 81.7056;
 
     if (isNaN(desiredAmount) || desiredAmount <= 0) {
         document.getElementById("result").innerHTML = "<p>Please enter a valid amount.</p>";
@@ -27,6 +31,3 @@ function calculateFees() {
         <p>To get <strong>$${desiredAmount.toFixed(2)}</strong>, ask for <strong class="highlight-green">$${amountToAsk.toFixed(2)}</strong>, which will be <strong>₹${askedAmountINR.toFixed(2)}</strong> at the exchange rate.</p>
     `;
 }
-
-// Set the current year in the footer
-document.getElementById("year").textContent = new Date().getFullYear();
