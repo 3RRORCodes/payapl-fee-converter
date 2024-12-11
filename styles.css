@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: url('/bgv.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.calculator-container {
+    background: rgba(255, 255, 255, 0.80);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.8s ease-in-out;
+    color: #333;
+}
+.calculator-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+.input-field {
+    width: calc(100% - 40px);
+    max-width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #fdfdfd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
+    background: #ffffff;
+}
+.result-container {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+.highlight-green {
+    color: #28a745;
+    font-weight: bold;
+}
+.note-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 196, 0, 0.362);
+    color: #000;
+    border: 1px solid #e6e6e692;
+    font-size: 14px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    font-weight: bold;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+    body {
+        background-size: auto;
+        background-position: center top;
+    }
+    .calculator-container {
+        padding: 15px;
+        width: 95%;
+    }
+    .input-field {
+        width: 90%;
+        max-width: none;
+    }
+    .note-container {
+        padding: 10px;
+        width: 95%;
+    }
+}
