@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     height: 100vh;
-    background: url('/bgv.webp') no-repeat center center;
+    background: url('./bgv.webp') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
