@@ -10,16 +10,16 @@
 <body>
     <div class="calculator-container">
         <h1 class="calculator-title"><i class="fas fa-calculator"></i> PayPal Fee Calculator</h1>
-        <input type="number" id="desiredAmount" class="input-field" placeholder="Enter amount you want" oninput="calculateFees()" />
+        <input type="number" id="desiredAmount" class="input-field" placeholder="Enter amount you need" oninput="calculateFees()"/>
         <div class="result-container" id="result"></div>
     </div>
     <div class="note-container">
-        Note: This calculator is for personal use and may not be 100% accurate. Fees and exchange rates (₹81.7056 per $1) vary by country and payment method.
+        Note: This calculator is for personal use and may not be 100% accurate. Fees and exchange rates (<span id="exchangeRate">Loading...</span>) vary by country and payment method.
     </div>
     <div class="footer">
         &copy; <span id="year"></span> Created with <span style="color: rgb(232, 43, 43);">&hearts;</span> by 3RRORCodes. All rights reserved.
     </div>
 
-    <script src="./script.js"></script>     
+    <script src="./script.js"></script>
 </body>
 </html>
