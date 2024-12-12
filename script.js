@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function calculateFees() {
     const desiredAmount = parseFloat(document.getElementById("desiredAmount").value);
-    const exchangeRate = 81.7056;
+    const exchangeRate = 81.7722;
 
     if (isNaN(desiredAmount) || desiredAmount <= 0) {
         document.getElementById("result").innerHTML = "<p>Please enter a valid amount.</p>";
